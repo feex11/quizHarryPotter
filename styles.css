@@ -70,8 +70,8 @@
 
 .house-image {
     z-index: 9999; /* Um valor alto para garantir que ficará no topo */
-    width: 350px;
-    height: 391px;
+    width: 250px;
+    height: 291px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
