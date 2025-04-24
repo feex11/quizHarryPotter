@@ -1,0 +1,108 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Yusei+Magic&display=swap');
+
+
+
+* {
+    font-family: Cinzel Decorative, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #100014, #000 90%);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .magic-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .particle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: radial-gradient(circle, #ffffff, transparent);
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: float 4s infinite ease-in-out;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translate(0, 0) scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: translate(-30px, -100px) scale(1.5);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translate(30px, -200px) scale(0);
+      opacity: 0;
+    }
+  }
+  
+.container {
+    z-index: 9999; /* Um valor alto para garantir que ficará no topo */
+    border-radius: 20px;
+    overflow-y: 100;
+    height: 800px;
+    width: 600px;
+    background-color: #1a1a1a; /* Um tom de cinza escuro que combina com o fundo preto */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #fff; /* Texto branco para contraste */
+}
+
+.house-image {
+    width: 350px;
+    height: 391px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+.house-image:hover {
+    transform: scale(1.05);
+  }
+
+#gryffindor{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+
+#hufflepuff{
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+}
+
+#slytherin{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+#ravenclaw{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+
+h1{
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
