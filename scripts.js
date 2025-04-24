@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       
       const casa = button.getAttribute("data-casa");
       casaSelecionada.push(casa);
-      console.log(casaSelecionada);
+
         if (numerador === 2){
         const pergunta = document.querySelector(".pergunta");
         const resposta1 = document.getElementById("botao1");
@@ -201,7 +201,97 @@ document.addEventListener("DOMContentLoaded", () => {
         resposta4.setAttribute("data-casa", "grifinoria");
         
   
-      } else if( numerador > 10){
+      } else if (numerador === 11){ 
+        const pergunta = document.querySelector(".pergunta");
+        const resposta1 = document.getElementById("botao1");
+        const resposta2 = document.getElementById("botao2");
+        const resposta3 = document.getElementById("botao3");
+        const resposta4 = document.getElementById("botao4");
+        pergunta.textContent = "O que mais te assusta em si mesmo(a)?";
+        resposta1.textContent = "A - O impulso de agir por impulso e correr riscos.";
+        resposta2.textContent = "B - A constante busca por respostas que talvez nunca cheguem. ";
+        resposta3.textContent = "C - O medo de decepcionar quem confia em mim.";
+        resposta4.textContent = "D - A ambição de ir longe demais, custe o que custar. ";
+
+        resposta1.setAttribute("data-casa", "grifinoria");
+        resposta2.setAttribute("data-casa", "corvinal");
+        resposta3.setAttribute("data-casa", "lufa-lufa");
+        resposta4.setAttribute("data-casa", "sonserina");
+        
+  
+      }  else if (numerador === 12){ 
+        const pergunta = document.querySelector(".pergunta");
+        const resposta1 = document.getElementById("botao1");
+        const resposta2 = document.getElementById("botao2");
+        const resposta3 = document.getElementById("botao3");
+        const resposta4 = document.getElementById("botao4");
+        pergunta.textContent = "Quando você olha para trás, o que mais te transforma ao lembrar do passado?";
+        resposta1.textContent = "A - As escolhas difíceis que fiz, mesmo sem certeza.";
+        resposta2.textContent = "B - As conexões que marcaram minha jornada. → Lufa-Lufa ";
+        resposta3.textContent = "C - As vezes que percebi algo escondido nas entrelinhas.";
+        resposta4.textContent = "D - As situações em que virei o jogo, mesmo desacreditado. ";
+
+        resposta1.setAttribute("data-casa", "grifinoria");
+        resposta2.setAttribute("data-casa", "lufa-lufa");
+        resposta3.setAttribute("data-casa", "corvinal");
+        resposta4.setAttribute("data-casa", "sonserina");
+        
+  
+      } else if (numerador === 13){ 
+        const pergunta = document.querySelector(".pergunta");
+        const resposta1 = document.getElementById("botao1");
+        const resposta2 = document.getElementById("botao2");
+        const resposta3 = document.getElementById("botao3");
+        const resposta4 = document.getElementById("botao4");
+        pergunta.textContent = "Qual dessas frases mais te intriga?";
+        resposta1.textContent = "A - E se o erro for parte essencial do caminho?";
+        resposta2.textContent = "B - Será que somos mesmo quem achamos ser? ";
+        resposta3.textContent = "C - Tudo tem um código – até o silêncio.";
+        resposta4.textContent = "D - Quem dita as regras raramente joga limpo. ";
+
+        resposta1.setAttribute("data-casa", "grifinoria");
+        resposta2.setAttribute("data-casa", "lufa-lufa");
+        resposta3.setAttribute("data-casa", "corvinal");
+        resposta4.setAttribute("data-casa", "sonserina");
+        
+  
+      } else if (numerador === 14){ 
+        const pergunta = document.querySelector(".pergunta");
+        const resposta1 = document.getElementById("botao1");
+        const resposta2 = document.getElementById("botao2");
+        const resposta3 = document.getElementById("botao3");
+        const resposta4 = document.getElementById("botao4");
+        pergunta.textContent = "O que você tende a perceber que outros ignoram?";
+        resposta1.textContent = "A - Como pequenas atitudes revelam muito sobre alguém";
+        resposta2.textContent = "B - Que intenções importam tanto quanto ações. ";
+        resposta3.textContent = "C - Que oportunidades surgem disfarçadas de caos.";
+        resposta4.textContent = "D - Que todo padrão tem uma falha esperando ser vista. ";
+
+        resposta1.setAttribute("data-casa", "lufa-lufa");
+        resposta2.setAttribute("data-casa", "lufa-grifinoria");
+        resposta3.setAttribute("data-casa", "sonserina");
+        resposta4.setAttribute("data-casa", "corvinal");
+        
+  
+      }else if (numerador === 15){ 
+        const pergunta = document.querySelector(".pergunta");
+        const resposta1 = document.getElementById("botao1");
+        const resposta2 = document.getElementById("botao2");
+        const resposta3 = document.getElementById("botao3");
+        const resposta4 = document.getElementById("botao4");
+        pergunta.textContent = "Quando ninguém está vendo... quem você escolhe ser?";
+        resposta1.textContent = "A - Alguém que segue em frente, mesmo com medo.";
+        resposta2.textContent = "B - Alguém que cuida dos outros, mesmo em silêncio. ";
+        resposta3.textContent = "C - Alguém que pensa, questiona e observa antes de agir.";
+        resposta4.textContent = "D - Alguém que prepara o próximo passo, mesmo no escuro. ";
+
+        resposta1.setAttribute("data-casa", "grifinoria");
+        resposta2.setAttribute("data-casa", "lufa-lufa");
+        resposta3.setAttribute("data-casa", "corvinal");
+        resposta4.setAttribute("data-casa", "sonserina");
+        
+  
+      }else if( numerador > 15){
         const container = document.querySelector(".container");
         const botoes = document.querySelector(".botoes");
         const pergunta = document.querySelector(".pergunta");
@@ -209,7 +299,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const resposta2 = document.getElementById("botao2");
         const resposta3 = document.getElementById("botao3");
         const resposta4 = document.getElementById("botao4");
-        contagemElement.textContent = "";
+        contagemElement.remove();
         pergunta.textContent = `Você pertence à casa: ${casaMaisFrequente(casaSelecionada)}!`;
         resposta1.remove();
         resposta2.remove();
@@ -251,6 +341,7 @@ document.addEventListener("DOMContentLoaded", () => {
         imagem.style.display = "block";
         imagem.style.margin = "0 auto";
         pergunta.style.fontWeight = "bolder";
+        pergunta.style.marginBottom = "0";
         container.appendChild(frase);
       }
       });

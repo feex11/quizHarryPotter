@@ -23,6 +23,7 @@
   }
   
   .magic-container {
+    padding: 20px;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -57,20 +58,24 @@
     }
   }
   
-.container {
+  .container {
     z-index: 1; 
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    overflow-y: 100;
-    height: 800px;
-    width: 600px;
+    overflow-y: auto;
+    height: auto;
+    width: clamp(280px, 90vw, 600px);
     background-color: #101b33; 
     font-family: 'Arial', sans-serif;
     text-align: center;
     color: #fff;
     border: 2px solid #fff; 
+    padding: 20px;
+    box-sizing: border-box;
+    max-height: 90vh;
 }
+
 
 .contagem{
     height: 100px;
@@ -84,44 +89,46 @@
     align-items: center;
 }
 
-.pergunta{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    width: 100%;
-    font-size: 38px;
-    font-weight: normal;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.pergunta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+  font-size: clamp(20px, 5vw, 38px);
+  font-weight: normal;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.botoes{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    height: 600px;
+.botoes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: auto;
+  padding: 20px 0;
 }
 
-.botao-resposta{
-    display: flex ;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    height: 80px;
-    color: #fff;
-    background-color: #101b33;
-    border: 2px solid #fff;
-    font-size: 22px;
-    font-weight: normal;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    text-align: left;
-    padding: 5px;
+.botao-resposta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(250px, 70vw, 500px);
+  height: clamp(50px, 8vw, 80px);
+  color: #fff;
+  background-color: #101b33;
+  border: 2px solid #fff;
+  font-size: clamp(16px, 2vw, 22px);
+  font-weight: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-align: left;
+  padding: 5px;
 }
+
 
 .botao-resposta:hover{
     background-color: #fff;
@@ -131,8 +138,7 @@
 
 .house-image {
     z-index: 1; /* Um valor alto para garantir que ficará no topo */
-    width: 250px;
-    height: 291px;
+    width: 13%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
