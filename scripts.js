@@ -227,7 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const resposta4 = document.getElementById("botao4");
         pergunta.textContent = "Quando você olha para trás, o que mais te transforma ao lembrar do passado?";
         resposta1.textContent = "A - As escolhas difíceis que fiz, mesmo sem certeza.";
-        resposta2.textContent = "B - As conexões que marcaram minha jornada. → Lufa-Lufa ";
+        resposta2.textContent = "B - As conexões que marcaram minha jornada.";
         resposta3.textContent = "C - As vezes que percebi algo escondido nas entrelinhas.";
         resposta4.textContent = "D - As situações em que virei o jogo, mesmo desacreditado. ";
 
