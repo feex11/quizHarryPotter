@@ -16,7 +16,8 @@
   body, html {
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, #100014, #000 90%);
+    background-color: #020815;
+    /*background: linear-gradient(180deg, #100014, #000 90%);*/
     overflow: hidden;
     position: relative;
   }
@@ -57,19 +58,79 @@
   }
   
 .container {
-    z-index: 9999; /* Um valor alto para garantir que ficará no topo */
+    z-index: 1; 
+    display: flex;
+    flex-direction: column;
     border-radius: 20px;
     overflow-y: 100;
     height: 800px;
     width: 600px;
-    background-color: #13131F; /* Um tom de cinza escuro que combina com o fundo preto */
+    background-color: #101b33; 
     font-family: 'Arial', sans-serif;
     text-align: center;
-    color: #fff; /* Texto branco para contraste */
+    color: #fff;
+    border: 2px solid #fff; 
+}
+
+.contagem{
+    height: 100px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: normal;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pergunta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    font-size: 38px;
+    font-weight: normal;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.botoes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 600px;
+}
+
+.botao-resposta{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 80px;
+    color: #fff;
+    background-color: #101b33;
+    border: 2px solid #fff;
+    font-size: 22px;
+    font-weight: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    text-align: left;
+    padding: 5px;
+}
+
+.botao-resposta:hover{
+    background-color: #fff;
+    color: #101b33;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .house-image {
-    z-index: 9999; /* Um valor alto para garantir que ficará no topo */
+    z-index: 1; /* Um valor alto para garantir que ficará no topo */
     width: 250px;
     height: 291px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -108,5 +169,10 @@ h1{
     font-weight: normal;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-top: 20px;
+}
+
+.chapeu-seletor{
+  z-index: 1; /* Um valor alto para garantir que ficará no topo */
+    width: 80px;
+    height: 80px;
 }

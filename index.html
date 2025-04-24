@@ -9,12 +9,22 @@
 <body>
 
   <div class="magic-container">
-    <h1>Descrubra sua casa</h1>
+    <img src="images/chapeu-seletor.png" alt="chapeu-seletor" class="chapeu-seletor" title="Chapéu Seletor" />
+    <h1>Descubra sua casa</h1>
     <img src="images/Gryffindor_ClearBG.webp" alt="Grifindor" title="Grifinória" class="house-image" id="gryffindor" />
     <img src="images/Hufflepuff_ClearBG.webp" alt="Hufflepuff" title="Lufa-Lufa" class="house-image" id="hufflepuff" />
     <img src="images/Ravenclaw_ClearBG.webp" alt="Ravenclaw" title="Corvinal" class="house-image" id="ravenclaw" />
     <img src="images/Slytherin_ClearBG.webp" alt="Slytherin" title="Sonserina" class="house-image" id="slytherin" />	
-    <div class="container"></div>
+    <div class="container">
+      <div class="contagem">1/15</div>
+      <div class="pergunta">Quando está diante de uma decisão importante, o que costuma pesar mais?</div>
+    <div class="botoes">
+      <div class="resposta1"><button id ="botao1" class="botao-resposta" title="Resposta 1" data-casa="grifinoria">A - Os riscos e a chance de desafiar a si mesmo. </button></div>
+      <div class="resposta2"><button id ="botao2" class="botao-resposta" title="Resposta 2" data-casa="lufa-lufa">B - A justiça da escolha e como ela afeta os outros.</button></div>
+      <div class="resposta3"><button id ="botao3" class="botao-resposta" title="Resposta 3" data-casa="corvinal">C - A lógica por trás de cada opção e as consequências racionais.</button></div>
+      <div class="resposta4"><button id ="botao4" class="botao-resposta" title="Resposta 4" data-casa="sonserina">D - O impacto da decisão na sua trajetória e ambições. </button></div>
+    </div>
+    </div>
   </div>
 
   <script src="scripts.js" defer></script>
