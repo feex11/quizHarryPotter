@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
       particle.style.animationDelay = `${delay}s`;
   
       // tamanho aleatório
-      const size = Math.random() * 6 + 4;
+      const size = Math.random() * 8 + 6;
       particle.style.width = `${size}px`;
       particle.style.height = `${size}px`;
   
